@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="X-UA-compatible" content="ie=edge" />
+    <title>The Traveling Hartings</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <a class="logo-container" href="index.html">
+          <img class="header-logo" src="svg/logo.svg" alt="" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="travel.html">travel</a></li>
+            <li><a href="photos.html">photos</a></li>
+            <li><a href="wildflowers.html">wildflowers</a></li>
+          </ul>
+        </nav>
+        <img class="searcher-icon" src="svg/search_icon.svg" />
+        <div class="searchbar-wrapper">
+          <div class="search-input-form">
+            <form action="search.php" method="POST">
+              <div class="input-holder">
+                <input
+                  type="text"
+                  list="searchResults"
+                  autocomplete="off"
+                  name="search"
+                  placeholder="Search..."
+                  class="mySearch"
+                  id="searchbox"
+                />
+                <button
+                  class="hidden-button"
+                  type="submit"
+                  name="submit-search"
+                ></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="polaroid-collection-banner">
+      <img
+        class="polaroid-banner"
+        sizes="(max-width: 2800px) 100vw, 2800px"
+        srcset="
+          index_banner/polaroid_master_opczuy_c_scale,w_200.jpg   200w,
+          index_banner/polaroid_master_opczuy_c_scale,w_1220.jpg 1220w,
+          index_banner/polaroid_master_opczuy_c_scale,w_1833.jpg 1833w,
+          index_banner/polaroid_master_opczuy_c_scale,w_2431.jpg 2431w,
+          index_banner/polaroid_master_opczuy_c_scale,w_2800.jpg 2800w
+        "
+        src="index_banner/polaroid_master_opczuy_c_scale,w_2800.jpg"
+        alt="Collection of polaroid images scattered, 'The Traveling Hartings' is written on three seperate polaroids creating a title"
+      />
+    </div>
+
+    <!-- <div class="article-title-container polaroid-collection-banner-margin">
+      <h1 class="place-open">Our Travels</h1>
+    </div> -->
+    <section class="gallery">
+      <div class="article-title-container polaroid-collection-banner-margin">
+        <h1 class="place-open search-page">Our Travels</h1>
+      </div>
+
+      <!-- San Candido-->
+      <!-- small, medium, and large, browser will decide which image to load based on connection and device. Lazy load implemented for further optimization-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="san_candido_lienz.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/san-candido-polaroid/cow-polaroid-master_cqaagr_c_scale,w_200.jpg 200w,
+              travels-grid/san-candido-polaroid/cow-polaroid-master_cqaagr_c_scale,w_393.jpg 393w,
+              travels-grid/san-candido-polaroid/cow-polaroid-master_cqaagr_c_scale,w_502.jpg 502w,
+              travels-grid/san-candido-polaroid/cow-polaroid-master_cqaagr_c_scale,w_591.jpg 591w,
+              travels-grid/san-candido-polaroid/cow-polaroid-master_cqaagr_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/san-candido-polaroid/cow-polaroid-master_cqaagr_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!-- Pula-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="pula_croatia.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/pula-polaroid/pula-polaroid_b42qn8_c_scale,w_200.jpg 200w,
+              travels-grid/pula-polaroid/pula-polaroid_b42qn8_c_scale,w_402.jpg 402w,
+              travels-grid/pula-polaroid/pula-polaroid_b42qn8_c_scale,w_577.jpg 577w,
+              travels-grid/pula-polaroid/pula-polaroid_b42qn8_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/pula-polaroid/pula-polaroid_b42qn8_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!-- dublin-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="dublin_ireland.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/dublin-polaroid/dublin-polaroid-master_ljnbhb_c_scale,w_200.jpg 200w,
+              travels-grid/dublin-polaroid/dublin-polaroid-master_ljnbhb_c_scale,w_419.jpg 419w,
+              travels-grid/dublin-polaroid/dublin-polaroid-master_ljnbhb_c_scale,w_593.jpg 593w,
+              travels-grid/dublin-polaroid/dublin-polaroid-master_ljnbhb_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/dublin-polaroid/dublin-polaroid-master_ljnbhb_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!--berlin-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="berlin_germany.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/berlin-polaroid/berlin-polaroid_jiupew_c_scale,w_200.jpg 200w,
+              travels-grid/berlin-polaroid/berlin-polaroid_jiupew_c_scale,w_425.jpg 425w,
+              travels-grid/berlin-polaroid/berlin-polaroid_jiupew_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/berlin-polaroid/berlin-polaroid_jiupew_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!-- venice-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="venice_italy.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/venice-polaroid/venice-polaroid_oxmueq_c_scale,w_200.jpg 200w,
+              travels-grid/venice-polaroid/venice-polaroid_oxmueq_c_scale,w_442.jpg 442w,
+              travels-grid/venice-polaroid/venice-polaroid_oxmueq_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/venice-polaroid/venice-polaroid_oxmueq_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!-- amsterdam-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="amsterdam_netherlands.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/amsterdam-polaroid/amsridamsterdam-polaroid_h4ojbb_c_scale,w_200.jpg 200w,
+              travels-grid/amsterdam-polaroid/amsterdam-polaroid_h4ojbb_c_scale,w_405.jpg       405w,
+              travels-grid/amsterdam-polaroid/amsterdam-polaroid_h4ojbb_c_scale,w_532.jpg       532w,
+              travels-grid/amsterdam-polaroid/amsterdam-polaroid_h4ojbb_c_scale,w_608.jpg       608w
+            "
+            src="travels-grid/amsterdam-polaroid/amsterdam-polaroid_h4ojbb_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!-- trieste-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="trieste_italy.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/trieste-polaroid/trieste-polaroid-master_xzmuyg_c_scale,w_200.jpg 200w,
+              travels-grid/trieste-polaroid/trieste-polaroid-master_xzmuyg_c_scale,w_403.jpg 403w,
+              travels-grid/trieste-polaroid/trieste-polaroid-master_xzmuyg_c_scale,w_557.jpg 557w,
+              travels-grid/trieste-polaroid/trieste-polaroid-master_xzmuyg_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/trieste-polaroid/trieste-polaroid-master_xzmuyg_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!--Rome-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="rome_italy.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/rome-polaroid/rome-polaroid_dj0uf4_c_scale,w_200.jpg 200w,
+              travels-grid/rome-polaroid/rome-polaroid_dj0uf4_c_scale,w_335.jpg 335w,
+              travels-grid/rome-polaroid/rome-polaroid_dj0uf4_c_scale,w_540.jpg 540w,
+              travels-grid/rome-polaroid/rome-polaroid_dj0uf4_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/rome-polaroid/rome-polaroid_dj0uf4_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!--Lake Bled-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="lake_bled_slovenia.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/lake-bled-polaroid/bled-tower-master_hvgksr_c_scale,w_200.jpg 200w,
+              travels-grid/lake-bled-polaroid/bled-tower-master_hvgksr_c_scale,w_479.jpg 479w,
+              travels-grid/lake-bled-polaroid/bled-tower-master_hvgksr_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/lake-bled-polaroid/bled-tower-master_hvgksr_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!--Verona-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="verona_italy.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/verona-polaroid/verona-polaroid-master_qowfor_c_scale,w_200.jpg 200w,
+              travels-grid/verona-polaroid/verona-polaroid-master_qowfor_c_scale,w_399.jpg 399w,
+              travels-grid/verona-polaroid/verona-polaroid-master_qowfor_c_scale,w_561.jpg 561w,
+              travels-grid/verona-polaroid/verona-polaroid-master_qowfor_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/verona-polaroid/verona-polaroid-master_qowfor_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+
+      <!--piancavallo-->
+      <figure class="gallery-wall polaroid-picture">
+        <a class="polaroid-link" href="piancavallo.html">
+          <img
+            class="polaroid-shadow"
+            sizes="(max-width: 608px) 100vw, 608px"
+            srcset="
+              travels-grid/piancavallo-polaroid/piancavallo-master_nj9let_c_scale,w_200.jpg 200w,
+              travels-grid/piancavallo-piancavallo-master_nj9let_c_scale,w_462.jpg          462w,
+              travels-grid/piancavallo-polaroid/piancavallo-master_nj9let_c_scale,w_608.jpg 608w
+            "
+            src="travels-grid/piancavallo-polaroid/piancavallo-master_nj9let_c_scale,w_608.jpg"
+            alt=""
+          />
+        </a>
+      </figure>
+    </section>
+
+    <div class="footer-wrapper">
+      <footer>
+        <div class="icon-list">
+          <ul class="icon">
+            <li class="icon-logos">
+              <a href="home.html"
+                ><img class="iconic" src="svg/home.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="mailto:thetravelinghartings@gmail.com"
+                ><img class="iconic" src="svg/mail.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.facebook.com/matthew.harting.1"
+                ><img class="iconic" src="svg/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.instagram.com/matthew_harting/"
+                ><img class="iconic" src="svg/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.amazon.com"
+                ><img class="iconic" src="svg/amazon.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.airbnb.com"
+                ><img class="iconic" src="svg/airbnb.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.twitter.com"
+                ><img class="iconic" src="svg/twitter.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-text-container">
+          <p class="footer-text">
+            The Hartings would like to thank you for visiting our page.<br />
+            This webpage was made entirely by Matthew Harting <br />
+            © 2021 Planet Cruiser Media
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="apps/hamburger.js"></script>
+  </body>
+</html>

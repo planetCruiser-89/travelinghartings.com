@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="X-UA-compatible" content="ie=edge" />
+    <title>The Traveling Hartings</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="logo-container">
+          <a href="index.html">
+            <img class="header-logo" src="svg/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="travel.html">travel</a></li>
+            <li><a href="photos.html">photos</a></li>
+            <li><a href="wildflowers.html">wildflowers</a></li>
+          </ul>
+        </nav>
+        <img class="searcher-icon" src="svg/search_icon.svg" />
+        <div class="searchbar-wrapper">
+          <div class="search-input-form">
+            <form action="search.php" method="POST">
+              <div class="input-holder">
+                <input
+                  type="text"
+                  list="searchResults"
+                  autocomplete="off"
+                  name="search"
+                  placeholder="Search..."
+                  class="mySearch"
+                  id="searchbox"
+                />
+                <button
+                  class="hidden-button"
+                  type="submit"
+                  name="submit-search"
+                ></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="polaroid-collection-banner">
+      <img
+        sizes="(max-width: 2800px) 100vw, 2800px"
+        srcset="
+          index_banner/polaroid_master_opczuy_c_scale,w_200.jpg   200w,
+          index_banner/polaroid_master_opczuy_c_scale,w_1220.jpg 1220w,
+          index_banner/polaroid_master_opczuy_c_scale,w_1833.jpg 1833w,
+          index_banner/polaroid_master_opczuy_c_scale,w_2431.jpg 2431w,
+          index_banner/polaroid_master_opczuy_c_scale,w_2800.jpg 2800w
+        "
+        src="index_banner/polaroid_master_opczuy_c_scale,w_2800.jpg"
+        alt="Collection of polaroid images scattered, 'The Traveling Hartings' is written on three seperate polaroids creating a title"
+      />
+    </div>
+
+    <div class="flex-wrapper index-page">
+      <div class="centerizer">
+        <article>
+          <p class="article-paragraph">
+            <span class="first-word"> Hello </span>and welcome to our website, a
+            labor of love and still a work in progress. While browsing you may
+            notice there is still much to be done content wise. The design of
+            the website itself can stand on its own, and the time has come to
+            showcase my skills. I am writing more articles and editing photos
+            each day. So please enjoy the site as is.
+          </p>
+
+          <p class="article-paragraph">
+            We are the Hartings and enjoy nothing more than experiencing life
+            together. We first met in St. Louis, Missouri in July of 2014. By
+            2015 the military moved us to Montgomery, Alabama. On Novemeber 11
+            2016 we said "I do" on the beach of Gulf Shores, Alabama. Then in
+            2018 we recieved military orders moving us to Italy. For a little
+            more than two and a half years we resided in Pordenone, Italy. We
+            were very fortunate being able to travel a lot of Europe before
+            needing to move back to the states in 2020.
+          </p>
+
+          <p class="article-paragraph">
+            The year 2020 - 2021 has been eventful, Matthew has obtained his
+            bachelors in Computer Science, we moved to Florida, we bought a
+            home, and now we are expecting our first child between the last week
+            of July to the first week of August. If there is one thing we have
+            learned since the day we met is life moves fast, so take time and
+            appreciate where you are.
+          </p>
+
+          <!-- <h1 class="index-articles">Recent Posts</h1>
+
+          <div class="divider"></div>
+
+        <div class="index-article-container">
+
+          <div class="index-recent-posts-container">
+            <a class="search-link" href="rainy_day_venice.html">
+            <h5>Cruising Along the "Pearl of the Dolomites"</h5>
+              <img
+                class="index-recent-posts-image"
+                sizes="(max-width: 2800px) 100vw, 2800px"
+            srcset="
+              article-album/san-candido/IMG_3047/IMG_3047_h5lckc_c_scale,w_200.jpg   200w,
+              article-album/san-candido/IMG_3047/IMG_3047_h5lckc_c_scale,w_1264.jpg 1264w,
+              article-album/san-candido/IMG_3047/IMG_3047_h5lckc_c_scale,w_1864.jpg 1864w,
+              article-album/san-candido/IMG_3047/IMG_3047_h5lckc_c_scale,w_2464.jpg 2464w,
+              article-album/san-candido/IMG_3047/IMG_3047_h5lckc_c_scale,w_2800.jpg 2800w
+            "
+            src="article-album/san-candido/IMG_3047/IMG_3047_h5lckc_c_scale,w_2800.jpg"
+            alt="Matt and Michelle back-to-back victory pose."
+          />
+              <h3 class="index-page">June 16 2019</h3>
+              <p class="article-index">
+              Camera, rain coat, boots. Look at these pictures of a rainy
+              Venice.
+            </p>
+              </a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="index-recent-posts-container">
+          <a class="search-link" href="san_candido_lienz.html">
+          <h5>Back to School</h5>
+              <img
+                class="index-recent-posts-image"
+                src="homies_pics/boat_man-s.jpg"
+                srcset="
+                  homies_pics/boat_man-s.jpg  864w,
+                  homies_pics/boat_man-m.jpg 1584w,
+                  homies_pics/boat_man-l.jpg 2304w
+                "
+                alt=""
+              />
+              <h3 class="index-page">June 16 2019</h3>
+              <p class="article-index">
+            Matt's learning to code, and pursuing a Computer Science degree.
+            </p>
+            
+            </a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="index-recent-posts-container">
+          <a class="search-link" href="san_candido_lienz.html">
+          <h5>The Big Move</h5>            
+              <img
+                class="index-recent-posts-image"
+                src="homies_pics/boat_man-s.jpg"
+                srcset="
+                  homies_pics/boat_man-s.jpg  864w,
+                  homies_pics/boat_man-m.jpg 1584w,
+                  homies_pics/boat_man-l.jpg 2304w
+                "
+                alt=""
+              />
+              <h3 class="index-page">June 16 2019</h3>
+              <p class="article-index">
+                We're moving back to the states!
+              </p>
+            </a>
+          </div>
+        </div> -->
+        </article>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <footer>
+        <div class="icon-list">
+          <ul class="icon">
+            <li class="icon-logos">
+              <a href="home.html"
+                ><img class="iconic" src="svg/home.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="mailto:thetravelinghartings@gmail.com"
+                ><img class="iconic" src="svg/mail.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.facebook.com/matthew.harting.1"
+                ><img class="iconic" src="svg/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.instagram.com/matthew_harting/"
+                ><img class="iconic" src="svg/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.amazon.com"
+                ><img class="iconic" src="svg/amazon.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.airbnb.com"
+                ><img class="iconic" src="svg/airbnb.svg" alt=""
+              /></a>
+            </li>
+            <li class="icon-logos">
+              <a href="https://www.twitter.com"
+                ><img class="iconic" src="svg/twitter.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-text-container">
+          <p class="footer-text">
+            The Hartings would like to thank you for visiting our page.<br />
+            This webpage was made entirely by Matthew Harting <br />
+            © 2021 Planet Cruiser Media
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="apps/hamburger.js"></script>
+  </body>
+</html>
